@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <p>Finding the lager number with help of Argument objects</p>
+        <p id="result"></p>
+        <script>
+            function findMax(){
+                var max = 0;
+                for(i = 0; i<arguments.length; i++){
+                    if (arguments[i] > max){
+                        max = arguments[i];
+                    }
+                }
+                return max;
+            }
+            document.getElementById("result").innerHTML = findMax(5, 2, 7, 8, 9, 10);
+        </script>
+    </body>
+</html>
